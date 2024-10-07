@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "plugin:tailwindcss/recommended",
+    "@rocketseat/eslint-config/next",
+    "next/core-web-vitals"
+  ],
+  "plugins": ["tailwindcss"],
+  "rules": {
+    "tailwindcss/classnames-order": "warn",
+    "max-len": ["error", { "code": 80, "ignoreStrings": true }]
+  }
+}
