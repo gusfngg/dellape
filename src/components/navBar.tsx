@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { Link as ScrollLink } from 'react-scroll'
 import * as React from 'react'
 import { FileText, Menu, Truck, User } from 'lucide-react'
 import { Button } from './ui/button'
@@ -16,7 +17,28 @@ import {
   DropdownMenuTrigger,
 } from './ui/dropdown-menu'
 
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from '@/components/ui/drawer'
+
 export default function NavBar() {
+  let scrollPosition = 0
+
+  const handleOpenDrawer = () => {
+    scrollPosition = window.scrollY
+  }
+
+  const handleCloseDrawer = () => {
+    window.scrollTo(0, scrollPosition)
+  }
+
   return (
     <header className="border-b border-neutral-400">
       <div className="py-5">
@@ -47,7 +69,65 @@ export default function NavBar() {
             </div>
 
             <div className="flex justify-between min-[825px]:hidden">
-              <DropdownMenu>
+              <Drawer onOpen={handleOpenDrawer} onClose={handleCloseDrawer}>
+                <DrawerTrigger className="p-2 transition">
+                  <Button
+                    size="icon"
+                    variant="ghost"
+                    className="size-4"
+                    aria-label="Open menu"
+                    asChild
+                  >
+                    <Menu className="size-7" />
+                  </Button>
+                </DrawerTrigger>
+
+                <DrawerContent>
+                  <div className="px-7 py-6">
+                    <nav>
+                      <ul className="flex flex-col gap-2 text-xl">
+                        <li>
+                          <ScrollLink
+                            to={'hero'}
+                            smooth={true}
+                            duration={500}
+                            className="flex items-center scroll-smooth"
+                          >
+                            <User className="mr-2 size-4" />
+                            <span>Início</span>
+                          </ScrollLink>
+                        </li>
+                        <li>
+                          <DrawerClose asChild>
+                            <ScrollLink
+                              to={'services'}
+                              smooth={true}
+                              duration={500}
+                              className="flex items-center scroll-smooth"
+                            >
+                              <Truck className="mr-2 size-4" />
+                              <span>Serviços</span>
+                            </ScrollLink>
+                          </DrawerClose>
+                        </li>
+                        <li>
+                          <ScrollLink
+                            to="about"
+                            smooth={true}
+                            duration={500}
+                            className="flex items-center"
+                          >
+                            <FileText className="mr-2 size-4" />
+                            <span>Sobre</span>
+                          </ScrollLink>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </DrawerContent>
+              </Drawer>
+
+              {/*               <DropdownMenu>
                 <DropdownMenuTrigger className="p-2 transition">
                   <Button
                     size="icon"
@@ -62,25 +142,40 @@ export default function NavBar() {
 
                 <DropdownMenuContent className="w-48">
                   <DropdownMenuItem>
-                    <Link href={'/#hero'} className="flex items-center">
+                    <ScrollLink
+                      to={'hero'}
+                      smooth={true}
+                      duration={500}
+                      className="flex items-center scroll-smooth"
+                    >
                       <User className="mr-2 size-4" />
                       <span>Início</span>
-                    </Link>
+                    </ScrollLink>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
-                    <Link href={'/#services'} className="flex items-center">
+                    <ScrollLink
+                      to={'services'}
+                      smooth={true}
+                      duration={500}
+                      className="flex items-center scroll-smooth"
+                    >
                       <Truck className="mr-2 size-4" />
                       <span>Serviços</span>
-                    </Link>
+                    </ScrollLink>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
-                    <Link href={'/#about'} className="flex items-center">
+                    <ScrollLink
+                      to="about"
+                      smooth={true}
+                      duration={500}
+                      className="flex items-center"
+                    >
                       <FileText className="mr-2 size-4" />
                       <span>Sobre</span>
-                    </Link>
+                    </ScrollLink>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
-              </DropdownMenu>
+              </DropdownMenu> */}
 
               {/*             <SheetTrigger className="p-2 transition">
               <Button
