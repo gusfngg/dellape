@@ -9,6 +9,8 @@ import AreiaMediaBranca from '@/assets/imgs-services/areia-media=branca.jpg'
 import Pedra1 from '@/assets/imgs-services/pedra1.png'
 import Pedra2 from '@/assets/imgs-services/pedra2.jpg'
 import Rachao from '@/assets/imgs-services/rachao.jpg'
+import Pedrisco from '@/assets/imgs-services/pedrisco.jpg'
+import PóDePedra from '@/assets/imgs-services/pó de pedra.png'
 
 export function Services() {
   return (
@@ -83,6 +85,7 @@ export function Services() {
               description="Pedrisco é um agregado com granulometria entre 4,8 mm e 9,5 mm, utilizado em concretos 
             finos, calçadas e blocos de concreto. Sua pequena dimensão permite boa trabalhabilidade e acabamento, 
             sendo também ideal para pavimentação de estradas e revestimentos em geral."
+              img={Pedrisco}
             />
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 16} inView>
@@ -91,6 +94,7 @@ export function Services() {
               description="Pó de pedra é um material fino, resultante da britagem de rochas, com partículas abaixo de 4,8 mm. Usado em calçadas,
              pavimentações intertravadas e assentamento de pisos, é valorizado pela boa compactação e drenagem. Também substitui a areia em 
              algumas misturas de concreto."
+              img={PóDePedra}
             />
           </BlurFade>
         </div>
