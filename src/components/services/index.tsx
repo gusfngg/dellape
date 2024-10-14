@@ -82,18 +82,18 @@ export function Services() {
           <BlurFade delay={BLUR_FADE_DELAY * 15} inView>
             <CardServices
               name="Pedrisco"
-              description="Pedrisco é um agregado com granulometria entre 4,8 mm e 9,5 mm, utilizado em concretos 
-            finos, calçadas e blocos de concreto. Sua pequena dimensão permite boa trabalhabilidade e acabamento, 
-            sendo também ideal para pavimentação de estradas e revestimentos em geral."
+              description="Pedrisco é um material granular formado por pequenas pedras, geralmente com dimensões entre 4,8 mm e 12,5 mm, 
+              resultantes da britagem de rochas maiores. É amplamente utilizado na construção civil, 
+              principalmente em concretos finos, como em lajes, pisos e blocos de concreto, devido à sua boa aderência ao cimento. "
               img={Pedrisco}
             />
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 16} inView>
             <CardServices
               name="Pó de pedra "
-              description="Pó de pedra é um material fino, resultante da britagem de rochas, com partículas abaixo de 4,8 mm. Usado em calçadas,
-             pavimentações intertravadas e assentamento de pisos, é valorizado pela boa compactação e drenagem. Também substitui a areia em 
-             algumas misturas de concreto."
+              description="Pó de pedra é um material granular fino, obtido a partir da britagem de rochas, com partículas 
+              menores que 4,8 mm. Devido à sua textura e capacidade de compactação, é amplamente utilizado em obras de pavimentação, 
+              como em calçadas, assentamento de pisos e pavimentos intertravados, proporcionando uma base estável e durável. "
               img={PóDePedra}
             />
           </BlurFade>

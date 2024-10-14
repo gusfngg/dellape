@@ -1,3 +1,4 @@
+import { Truck } from 'lucide-react'
 import { Card, CardDescription, CardHeader, CardTitle } from '../ui/card'
 
 import Image, { StaticImageData } from 'next/image'
@@ -13,7 +14,10 @@ export function CardServices({ name, description, img }: CardServicesProps) {
   return (
     <Card className="flex flex-col bg-[#f8f5ed]">
       <CardHeader>
-        <CardTitle>{name}</CardTitle>
+        <div className="flex items-end gap-2">
+          <Truck size={20} className="text-neutral-800" />
+          <CardTitle>{name}</CardTitle>
+        </div>
         <CardDescription className="my-6 text-justify text-neutral-600">
           {description}
         </CardDescription>
