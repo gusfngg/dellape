@@ -5,9 +5,9 @@ import { Button } from './ui/button'
 import Caminhao from '@/assets/1.jpeg'
 import { PhoneCall } from 'lucide-react'
 import { Tag } from './tag'
-import { RevealWrapper } from 'next-reveal'
 import BlurFade from '@/components/ui/blur-fade'
 import { BLUR_FADE_DELAY } from '@/lib/delay-animation'
+import Link from 'next/link'
 
 export function Hero() {
   return (
@@ -16,13 +16,11 @@ export function Hero() {
         <div className="items-center justify-between md:flex">
           <div className="md:max-w-[700px]">
             <div>
-              <RevealWrapper origin="top" duration={700} distance="30x">
-                <BlurFade delay={BLUR_FADE_DELAY * 2} inView>
-                  <div className="mt-6 bg-gradient-to-tr from-zinc-900 to-neutral-500 bg-clip-text text-7xl font-bold tracking-tighter text-transparent">
-                    Areia e Pedra de Qualidade!
-                  </div>
-                </BlurFade>
-              </RevealWrapper>
+              <BlurFade delay={BLUR_FADE_DELAY * 2} inView>
+                <div className="mt-6 bg-gradient-to-tr from-zinc-900 to-neutral-500 bg-clip-text text-7xl font-bold tracking-tighter text-transparent">
+                  Areia e Pedra de Qualidade!
+                </div>
+              </BlurFade>
               <BlurFade delay={BLUR_FADE_DELAY * 3} inView>
                 <p className="mt-6 text-left text-xl tracking-tight text-neutral-900">
                   Oferecemos areia e pedra de alta qualidade para suprir as suas
@@ -34,13 +32,15 @@ export function Hero() {
             </div>
 
             <BlurFade delay={BLUR_FADE_DELAY * 4} inView>
-              <Button
-                size={'lg'}
-                className="mt-[30px] flex max-w-max items-center gap-2 bg-neutral-900 hover:bg-neutral-800"
-              >
-                <PhoneCall className="size-[1.18rem]" />
-                <span>Faça um orçamento</span>
-              </Button>
+              <Link href="https://wa.me/5555159974408" target="_blank">
+                <Button
+                  size={'lg'}
+                  className="mt-[30px] flex max-w-max items-center gap-2 bg-neutral-900 hover:bg-neutral-800"
+                >
+                  <PhoneCall className="size-[1.18rem]" />
+                  <span>Entre em contato</span>
+                </Button>
+              </Link>
             </BlurFade>
 
             <div className="mt-12 flex flex-col items-start gap-4 md:mt-8 md:flex-row md:items-center">

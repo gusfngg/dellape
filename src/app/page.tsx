@@ -2,6 +2,7 @@ import { Services } from '@/components/services'
 import NavBar from '@/components/navBar'
 import { About } from '@/components/about'
 import { Hero } from '@/components/hero'
+import { Footer } from '@/components/footer'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Services />
       <About />
+      <Footer />
     </div>
   )
 }

@@ -14,7 +14,7 @@ import { useEffect, useState } from 'react'
 const navItems = [
   { name: 'Início', to: 'hero' },
   { name: 'Serviços', to: 'services' },
-  { name: 'About', to: 'about' },
+  { name: 'Sobre', to: 'about' },
 ]
 
 export default function NavBar() {

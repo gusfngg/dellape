@@ -4,6 +4,8 @@ import Caminhao from '@/assets/caminhão.png'
 import { Button } from './ui/button'
 import BlurFade from '@/components/ui/blur-fade'
 import { BLUR_FADE_DELAY } from '@/lib/delay-animation'
+import { Separator } from './ui/separator'
+import Link from 'next/link'
 
 export function About() {
   return (
@@ -50,14 +52,18 @@ export function About() {
       </div>
 
       <BlurFade delay={BLUR_FADE_DELAY * 20} inView>
-        <Button
-          size={'lg'}
-          className="mt-9 flex w-full items-center gap-2 bg-neutral-900 hover:bg-neutral-800 md:mt-[-44px] md:w-auto"
-        >
-          <PhoneCall className="size-[1.18rem]" />
-          <span>Faça um orçamento</span>
-        </Button>
+        <Link href={'https://wa.me/5555159974408'} target="_blank">
+          <Button
+            size={'lg'}
+            className="mt-9 flex w-full items-center gap-2 bg-neutral-900 hover:bg-neutral-800 md:mt-[-44px] md:w-auto"
+          >
+            <PhoneCall className="size-[1.18rem]" />
+            <span>Faça um orçamento</span>
+          </Button>
+        </Link>
       </BlurFade>
+
+      <Separator className="mt-10 bg-neutral-300" />
     </section>
   )
 }
