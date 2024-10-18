@@ -21,7 +21,7 @@ export function About() {
       <div className="items-start justify-between md:flex">
         <div>
           <BlurFade delay={BLUR_FADE_DELAY * 18} inView>
-            <p className="mb-6 text-justify text-lg tracking-tight text-neutral-900 md:max-w-[650px]">
+            <p className="mb-6 text-justify text-base tracking-tight text-neutral-900 md:max-w-[650px]">
               Na Dellape, com mais de 14 anos de experiência no transporte de
               areia e pedra, priorizamos qualidade, honestidade e compromisso.
               Nossos serviços são realizados com transparência e eficiência,
@@ -30,7 +30,7 @@ export function About() {
             </p>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 19} inView>
-            <p className="text-justify text-lg tracking-tight text-neutral-900 md:max-w-[650px]">
+            <p className="text-justify text-base tracking-tight text-neutral-900 md:max-w-[650px]">
               Além da excelência no atendimento, trabalhamos com transparência
               em cada etapa do processo, conquistando a confiança de nossos
               parceiros ao longo dos anos. Na Dellape, cada entrega reflete
