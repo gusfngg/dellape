@@ -6,13 +6,18 @@ import { Footer } from '@/components/footer'
 
 export default function Home() {
   return (
-    <div className="mx-auto mb-20 flex min-h-screen max-w-[92rem] flex-col px-5 antialiased">
-      <NavBar />
+    <div className="mx-auto mb-20 flex min-h-screen max-w-[90rem] flex-col px-5 antialiased">
+      <div>
+        <NavBar />
 
-      <Hero />
-      <Services />
-      <About />
-      <Footer />
+        <Hero />
+        <Services />
+        <About />
+      </div>
+
+      <div className="mt-20 rounded-lg bg-neutral-900">
+        <Footer />
+      </div>
     </div>
   )
 }
