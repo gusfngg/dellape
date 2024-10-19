@@ -3,13 +3,29 @@
 import Image from 'next/image'
 import { Button } from './ui/button'
 import Caminhao from '@/assets/1.jpeg'
+import Caminhao2 from '@/assets/caminhou.jpg'
 import { PhoneCall } from 'lucide-react'
 import { Tag } from './tag'
 import BlurFade from '@/components/ui/blur-fade'
 import { BLUR_FADE_DELAY } from '@/lib/delay-animation'
 import Link from 'next/link'
+import { Card, CardContent } from '@/components/ui/card'
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel'
 
 export function Hero() {
+  const imgs = [
+    { type: 'image', src: Caminhao },
+    { type: 'image', src: Caminhao2 },
+    { type: 'video', src: '/assets/video1.MP4' as string },
+  ]
+
   return (
     <section id="hero" className="pb-20 pt-8 md:py-10">
       <div className="container">
@@ -57,13 +73,52 @@ export function Hero() {
           </div>
           <div className="mt-20 flex-1 rounded-sm md:mt-0 md:max-w-[500px]">
             <BlurFade delay={BLUR_FADE_DELAY * 2.5} inView>
-              <Image
-                className="rounded-sm border-2 border-neutral-600"
-                src={Caminhao}
-                height={1920}
-                width={1080}
-                alt=""
-              />
+              <Carousel
+                opts={{
+                  loop: true,
+                }}
+              >
+                <CarouselContent>
+                  {imgs.map((item, index) => (
+                    <CarouselItem key={index}>
+                      <div className="p-1">
+                        <Card>
+                          <CardContent className="flex aspect-[3/4] items-center justify-center p-0">
+                            {item.type === 'image' ? (
+                              <Image
+                                src={item.src}
+                                alt=""
+                                width={1920}
+                                height={1080}
+                                className="size-full rounded-lg object-cover"
+                              />
+                            ) : (
+                              <video
+                                src={'/assets/video1.MP4'}
+                                title="a"
+                                className="size-full object-cover text-neutral-900"
+                                loop
+                                muted
+                              >
+                                Your browser does not support the video tag.
+                              </video>
+                            )}
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                  {/*                   <Image
+                    className="rounded-sm border-2 border-neutral-600"
+                    src={Caminhao}
+                    height={1920}
+                    width={1080}
+                    alt=""
+                  /> */}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
             </BlurFade>
           </div>
         </div>
