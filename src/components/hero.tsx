@@ -20,11 +20,7 @@ import {
 } from '@/components/ui/carousel'
 
 export function Hero() {
-  const imgs = [
-    { type: 'image', src: Caminhao },
-    { type: 'image', src: Caminhao2 },
-    { type: 'video', src: '/assets/video1.MP4' as string },
-  ]
+  const imgs = [{ src: Caminhao }, { src: Caminhao2 }]
 
   return (
     <section id="hero" className="pb-20 pt-8 md:py-10">
@@ -79,42 +75,23 @@ export function Hero() {
                 }}
               >
                 <CarouselContent>
-                  {imgs.map((item, index) => (
+                  {imgs.map(({ src }, index) => (
                     <CarouselItem key={index}>
                       <div className="p-1">
                         <Card>
                           <CardContent className="flex aspect-[3/4] items-center justify-center p-0">
-                            {item.type === 'image' ? (
-                              <Image
-                                src={item.src}
-                                alt=""
-                                width={1920}
-                                height={1080}
-                                className="size-full rounded-lg object-cover"
-                              />
-                            ) : (
-                              <video
-                                src={'/assets/video1.MP4'}
-                                title="a"
-                                className="size-full object-cover text-neutral-900"
-                                loop
-                                muted
-                              >
-                                Your browser does not support the video tag.
-                              </video>
-                            )}
+                            <Image
+                              src={src}
+                              alt=""
+                              width={1920}
+                              height={1080}
+                              className="size-full rounded-lg object-cover"
+                            />
                           </CardContent>
                         </Card>
                       </div>
                     </CarouselItem>
                   ))}
-                  {/*                   <Image
-                    className="rounded-sm border-2 border-neutral-600"
-                    src={Caminhao}
-                    height={1920}
-                    width={1080}
-                    alt=""
-                  /> */}
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
