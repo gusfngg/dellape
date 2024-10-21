@@ -10,13 +10,12 @@ import BlurFade from '@/components/ui/blur-fade'
 import { BLUR_FADE_DELAY } from '@/lib/delay-animation'
 import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
+import Autoplay from 'embla-carousel-autoplay'
 
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from '@/components/ui/carousel'
 
 export function Hero() {
@@ -73,6 +72,11 @@ export function Hero() {
                 opts={{
                   loop: true,
                 }}
+                plugins={[
+                  Autoplay({
+                    delay: 2500,
+                  }),
+                ]}
               >
                 <CarouselContent>
                   {imgs.map(({ src }, index) => (
@@ -93,8 +97,6 @@ export function Hero() {
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
               </Carousel>
             </BlurFade>
           </div>
