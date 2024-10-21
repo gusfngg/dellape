@@ -4,7 +4,7 @@ import { Carousel, CarouselContent, CarouselItem } from './ui/carousel'
 import Image from 'next/image'
 import Autoplay from 'embla-carousel-autoplay'
 import Caminhao from '@/assets/caminhão.png'
-import Caminhao2 from '@/assets/background-truck.jpg'
+import Caminhao2 from '@/assets/truck.jpg'
 
 export function CarrouselAbout() {
   const imgs = [{ src: Caminhao }, { src: Caminhao2 }]
