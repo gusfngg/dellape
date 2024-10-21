@@ -5,7 +5,7 @@ import { BLUR_FADE_DELAY } from '@/lib/delay-animation'
 export function Footer() {
   return (
     <footer>
-      <BlurFade delay={BLUR_FADE_DELAY * 21} inView>
+      <BlurFade delay={BLUR_FADE_DELAY * 23} inView>
         <div className="p-7 md:p-20">
           <div className="bg-gradient-to-tr from-zinc-300 to-neutral-200 bg-clip-text text-3xl font-bold leading-snug text-transparent md:text-4xl">
             Entre em contato!

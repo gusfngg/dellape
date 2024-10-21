@@ -11,6 +11,8 @@ import Pedra2 from '@/assets/imgs-services/pedra2.jpg'
 import Rachao from '@/assets/imgs-services/rachao.jpg'
 import Pedrisco from '@/assets/imgs-services/pedrisco.jpg'
 import PóDePedra from '@/assets/imgs-services/pó de pedra.png'
+import BicaCorrida from '@/assets/imgs-services/bica-corrida.jpeg'
+import PedraCalcamentoRustico from '@/assets/imgs-services/pedra-calcamento-rustico.jpg'
 
 export function Services() {
   return (
@@ -52,6 +54,16 @@ export function Services() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 12} inView>
             <CardServices
+              name="Bica corrida"
+              description="A bica corrida é um agregado composto por brita e pó de pedra, resultante da britagem.
+               Suas partículas variam entre finas e grossas, criando um material de ótima compactação.
+               É usada em base e sub-base de pavimentação, oferecendo excelente drenagem e resistência, sendo ideal para estradas, 
+               pátios e estabilização de solos."
+              img={BicaCorrida}
+            />
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 13} inView>
+            <CardServices
               name="Pedra 1"
               description="Pedra 1 é um agregado de granulometria entre 9,5 mm e 19 mm, 
             utilizado em concretos estruturais e pavimentações. 
@@ -60,31 +72,20 @@ export function Services() {
               img={Pedra1}
             />
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 13} inView>
+          <BlurFade delay={BLUR_FADE_DELAY * 14} inView>
             <CardServices
               name="Pedra 2"
               description="Pedra 2 tem granulometria entre 19 mm e 25 mm, sendo amplamente usada em concretos de maior resistência, 
             como em grandes estruturas e fundações. Concretos que exijam mais resistência.
-            Devido ao seu tamanho, oferece melhor compactação e drenagem, sendo indicada para pavimentações e obras de infraestrutura pesada."
+            Devido ao seu tamanho, oferece melhor compactação e drenagem."
               img={Pedra2}
-            />
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 14} inView>
-            <CardServices
-              name="Rachão"
-              description="Rachão é um tipo de pedra bruta com granulometria entre 76 mm e 250 mm,
-             usada em obras de grande porte, como base de pavimentação e contenção de encostas.
-            Sua alta resistência e tamanho proporcionam excelente drenagem, sendo ideal para estabilizar solos em aterros. Drenagem
-            Estabilização de solo Concreto ciclópico"
-              img={Rachao}
             />
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 15} inView>
             <CardServices
               name="Pedrisco"
               description="Pedrisco é um material granular formado por pequenas pedras, geralmente com dimensões entre 4,8 mm e 12,5 mm, 
-              resultantes da britagem de rochas maiores. É amplamente utilizado na construção civil, 
-              principalmente em concretos finos, como em lajes, pisos e blocos de concreto, devido à sua boa aderência ao cimento. "
+              resultantes da britagem de rochas maiores. É amplamente utilizado na construção civil, principalmente em concretos finos, "
               img={Pedrisco}
             />
           </BlurFade>
@@ -92,9 +93,29 @@ export function Services() {
             <CardServices
               name="Pó de pedra "
               description="Pó de pedra é um material granular fino, obtido a partir da britagem de rochas, com partículas 
-              menores que 4,8 mm. Devido à sua textura e capacidade de compactação, é amplamente utilizado em obras de pavimentação, 
-              como em calçadas, assentamento de pisos e pavimentos intertravados, proporcionando uma base estável e durável. "
+                  menores que 4,8 mm. Devido à sua textura e capacidade de compactação, é amplamente utilizado em obras de pavimentação, 
+                  como em calçadas proporcionando uma base estável e durável. "
               img={PóDePedra}
+            />
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 17} inView>
+            <CardServices
+              name="Pedra Para Calçamento Rústico"
+              description="
+              A pedra para calçamento rústico é um material de grandes dimensões, obtido da fragmentação de rochas. 
+              Suas superfícies irregulares a tornam ideal para pavimentação, proporcionando um acabamento robusto e durável. 
+              Usada em calçadas e caminhos, confere um visual rústico e tradicional."
+              img={PedraCalcamentoRustico}
+            />
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 18} inView>
+            <CardServices
+              name="Rachão"
+              description="Rachão é um tipo de pedra bruta com granulometria entre 76 mm e 250 mm,
+             usada em obras de grande porte, como base de pavimentação e contenção de encostas.
+            Sua alta resistência e tamanho proporcionam excelente drenagem, sendo ideal para estabilizar solos em aterros. Drenagem
+            Estabilização de solo Concreto ciclópico"
+              img={Rachao}
             />
           </BlurFade>
         </div>

@@ -19,7 +19,7 @@ export function About() {
 
       <div className="items-start justify-between gap-4 md:flex">
         <div>
-          <BlurFade delay={BLUR_FADE_DELAY * 18} inView>
+          <BlurFade delay={BLUR_FADE_DELAY * 19} inView>
             <p className="mb-6 text-justify text-base tracking-tight text-neutral-900 md:max-w-[600px] md:text-lg">
               Na Dellape, com mais de 14 anos de experiência no transporte de
               areia e pedra, priorizamos qualidade, honestidade e compromisso.
@@ -28,7 +28,7 @@ export function About() {
               confiança é a nossa maior conquista.
             </p>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 19} inView>
+          <BlurFade delay={BLUR_FADE_DELAY * 20} inView>
             <p className="text-justify text-base tracking-tight text-neutral-900 md:max-w-[600px] md:text-lg">
               Além da excelência no atendimento, trabalhamos com transparência
               em cada etapa do processo, conquistando a confiança de nossos
@@ -39,12 +39,12 @@ export function About() {
           </BlurFade>
         </div>
 
-        <BlurFade delay={BLUR_FADE_DELAY * 17} inView>
+        <BlurFade delay={BLUR_FADE_DELAY * 19} inView>
           <CarrouselAbout />
         </BlurFade>
       </div>
 
-      <BlurFade delay={BLUR_FADE_DELAY * 20} inView>
+      <BlurFade delay={BLUR_FADE_DELAY * 21} inView>
         <Link href={'https://wa.me/5555159974408'} target="_blank">
           <Button
             size={'lg'}

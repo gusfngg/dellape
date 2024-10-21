@@ -11,6 +11,7 @@ import { BLUR_FADE_DELAY } from '@/lib/delay-animation'
 import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
 import Autoplay from 'embla-carousel-autoplay'
+import QuadraAreia from '@/assets/quadra-de-areia.jpg'
 
 import {
   Carousel,
@@ -19,7 +20,7 @@ import {
 } from '@/components/ui/carousel'
 
 export function Hero() {
-  const imgs = [{ src: Caminhao }, { src: Caminhao2 }]
+  const imgs = [{ src: Caminhao }, { src: Caminhao2 }, { src: QuadraAreia }]
 
   return (
     <section id="hero" className="pb-20 pt-8 md:py-10">
