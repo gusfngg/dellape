@@ -14,7 +14,7 @@ export function CardServices({ name, description, img }: CardServicesProps) {
   return (
     <Card className="flex flex-col bg-[#f8f5ed]">
       <CardHeader>
-        <div className="flex items-end gap-2">
+        <div className="flex items-start gap-2">
           <Truck size={20} className="text-neutral-800" />
           <CardTitle>{name}</CardTitle>
         </div>
