@@ -26,12 +26,12 @@ import {
 export function Hero() {
   const imgs = [
     { src: Constallation },
-    { src: Constellation04 },
-    { src: Conteallation03 },
+    { src: QuadraAreia },
     { src: Constellation02 },
     { src: Caminhao },
+    { src: Constellation04 },
+    { src: Conteallation03 },
     { src: Caminhao2 },
-    { src: QuadraAreia },
   ]
 
   return (
