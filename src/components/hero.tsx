@@ -12,6 +12,10 @@ import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
 import Autoplay from 'embla-carousel-autoplay'
 import QuadraAreia from '@/assets/quadra-de-areia.jpg'
+import Constallation from '@/assets/constellation-01.png.jpg'
+import Constellation02 from '@/assets/constellation-02.png'
+import Conteallation03 from '@/assets/constellation-03.png'
+import Constellation04 from '@/assets/constellation-04.png'
 
 import {
   Carousel,
@@ -20,7 +24,15 @@ import {
 } from '@/components/ui/carousel'
 
 export function Hero() {
-  const imgs = [{ src: Caminhao }, { src: Caminhao2 }, { src: QuadraAreia }]
+  const imgs = [
+    { src: Constallation },
+    { src: Constellation04 },
+    { src: Conteallation03 },
+    { src: Constellation02 },
+    { src: Caminhao },
+    { src: Caminhao2 },
+    { src: QuadraAreia },
+  ]
 
   return (
     <section id="hero" className="pb-20 pt-8 md:py-10">
