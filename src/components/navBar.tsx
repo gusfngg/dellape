@@ -72,14 +72,9 @@ export default function NavBar() {
             <div className="flex justify-between min-[825px]:hidden">
               <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
                 <SheetTrigger className="transition">
-                  <Button
-                    size="icon"
-                    variant="ghost"
-                    className="size-7"
-                    aria-label="Open menu"
-                  >
-                    <Menu className="size-7" />
-                  </Button>
+                  <button aria-label="Open menu">
+                    <Menu />
+                  </button>
                 </SheetTrigger>
                 <SheetContent side="right" className="bg-[#fcfaf3]">
                   <div className="mt-12 flex flex-col justify-center space-y-3">

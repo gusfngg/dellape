@@ -15,14 +15,14 @@ export function Footer() {
             <li className="flex items-center gap-2 text-neutral-200">
               <MapPin />
 
-              <span className="text-base font-medium md:text-xl">
+              <span className="text-[15.5px] font-medium md:text-xl">
                 Salto de Pirapora - São Paulo, Brasil.
               </span>
             </li>
             <li className="flex items-center gap-2 text-neutral-200">
               <PhoneCall />
 
-              <span className="text-base font-medium md:text-xl">
+              <span className="text-[15.5px] font-medium md:text-xl">
                 +55 15 99744-0854
               </span>
             </li>

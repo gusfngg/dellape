@@ -57,13 +57,13 @@ export function Hero() {
 
             <div className="mt-12 flex flex-col items-start gap-4 md:mt-8 md:flex-row md:items-center">
               <BlurFade delay={BLUR_FADE_DELAY * 5} inView>
-                <Tag tag="+8 mil material transportado" />
+                <Tag tag="+8 mil materiais transportados" />
               </BlurFade>
               <BlurFade delay={BLUR_FADE_DELAY * 6} inView>
                 <Tag tag="+1000 clientes satisfeitos" />
               </BlurFade>
               <BlurFade delay={BLUR_FADE_DELAY * 7} inView>
-                <Tag tag="+2000 obras realizadaas" />
+                <Tag tag="+2000 obras realizadas" />
               </BlurFade>
             </div>
           </div>
