@@ -41,7 +41,7 @@ export function Hero() {
           <div className="md:max-w-[700px]">
             <div>
               <BlurFade delay={BLUR_FADE_DELAY * 2} inView>
-                <div className="mt-6 bg-gradient-to-tr from-zinc-900 to-neutral-500 bg-clip-text text-7xl font-bold tracking-tighter text-transparent">
+                <div className="mt-6 bg-gradient-to-tr from-zinc-950 to-neutral-500 bg-clip-text text-7xl font-bold tracking-tighter text-transparent">
                   Areia e Pedra de Qualidade!
                 </div>
               </BlurFade>

@@ -14,6 +14,7 @@ import { useEffect, useState } from 'react'
 const navItems = [
   { name: 'Início', to: 'hero' },
   { name: 'Serviços', to: 'services' },
+  { name: 'Transporte', to: 'transport' },
   { name: 'Sobre', to: 'about' },
 ]
 

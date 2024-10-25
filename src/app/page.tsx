@@ -3,6 +3,7 @@ import NavBar from '@/components/navBar'
 import { About } from '@/components/about'
 import { Hero } from '@/components/hero'
 import { Footer } from '@/components/footer'
+import { Transport } from '@/components/transport'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
 
         <Hero />
         <Services />
+        <Transport />
         <About />
       </div>
 
