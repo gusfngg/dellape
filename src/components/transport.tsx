@@ -13,25 +13,27 @@ export function Transport() {
           </div>
         </BlurFade>
 
-        <BlurFade delay={BLUR_FADE_DELAY * 9} inView>
-          <p className="mb-6 text-justify text-base tracking-tight text-neutral-900 md:max-w-[600px] md:text-lg">
-            Além de fornecer materiais de alta qualidade, oferecemos também
-            <strong> serviços de transporte</strong>, garantindo que o produto
-            chegue com segurança e pontualidade ao local da sua obra. Nossa
-            equipe é dedicada a atender as necessidades específicas de cada
-            cliente, oferecendo soluções ágeis e confiáveis para projetos de
-            construção e reformas.
-          </p>
-        </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 10} inView>
-          <Image
-            src={Constellation}
-            alt=""
-            width={1920}
-            height={1080}
-            className="aspect-[3/4] rounded-lg object-cover"
-          />
-        </BlurFade>
+        <div className="items-start justify-between gap-36 md:flex">
+          <BlurFade delay={BLUR_FADE_DELAY * 9} inView>
+            <p className="mb-6 text-justify text-base tracking-tight text-neutral-900 md:max-w-[700px] md:text-lg">
+              Além de fornecer materiais de alta qualidade, oferecemos também
+              <strong> serviços de transporte</strong>, garantindo que o produto
+              chegue com segurança e pontualidade ao local da sua obra. Nossa
+              equipe é dedicada a atender as necessidades específicas de cada
+              cliente, oferecendo soluções ágeis e confiáveis para projetos de
+              construção e reformas.
+            </p>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 10} inView>
+            <Image
+              src={Constellation}
+              alt=""
+              width={1920}
+              height={1080}
+              className="aspect-[3/4] h-[400px] w-[600px] rounded-lg object-cover"
+            />
+          </BlurFade>
+        </div>
       </div>
     </section>
   )
