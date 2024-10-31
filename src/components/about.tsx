@@ -45,7 +45,7 @@ export function About() {
       </div>
 
       <BlurFade delay={BLUR_FADE_DELAY * 21} inView>
-        <Link href={'https://wa.me/5555159974408'} target="_blank">
+        <Link href={'https://wa.me/+551599744-0854'} target="_blank">
           <Button
             size={'lg'}
             className="mt-9 flex w-full items-center gap-2 bg-neutral-900 hover:bg-neutral-800 md:mt-[-44px] md:w-auto"
