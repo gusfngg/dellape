@@ -56,7 +56,7 @@ export function Hero() {
             </div>
 
             <BlurFade delay={BLUR_FADE_DELAY * 4} inView>
-              <Link href="https://wa.me/5555159974408" target="_blank">
+              <Link href="https://wa.me/5515997440854" target="_blank">
                 <Button
                   size={'lg'}
                   className="mt-[30px] flex max-w-max items-center gap-2 bg-neutral-900 hover:bg-neutral-800"
