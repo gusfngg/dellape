@@ -6,7 +6,32 @@ import './globals.css'
 const dmSans = DM_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Dellape',
+  metadataBase: new URL('https://dellape.vercel.app'),
+  keywords: [
+    'Transporte de Areia e Pedra',
+    'Transporte de Areia e Pedra em Salto de Pirapora',
+    'Venda de Areia e Pedra',
+    'Venda de Areia e Pedra em Salto de Pirapora',
+    'Venda de areia',
+    'Venda de pedra',
+    'Transporte de Pedra',
+    'Transporte de Areia',
+    'Transporte de pedra',
+  ],
+  title: 'Transporte e venda de Areia e Pedra | Salto de Pirapora',
+  openGraph: {
+    title: 'Dellape | Serviços de Areia e Pedra',
+    description:
+      'Oferecemos areia e pedra de alta qualidade para suprir as suas necessidades. Com um compromisso de entregar materiais confiáveis e duradouros, garantimos agilidade e eficiência desde o pedido até a entrega.',
+    images: [''],
+    type: 'website',
+    locale: 'pt_BR',
+    siteName: 'Dellape',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({
